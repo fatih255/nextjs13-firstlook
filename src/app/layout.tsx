@@ -1,18 +1,23 @@
-import './globals.css'
+import React from "react";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+      Importing Server Components into Client Components Pattern
+      https://beta.nextjs.org/docs/rendering/server-and-client-components#importing-server-components-into-client-components
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

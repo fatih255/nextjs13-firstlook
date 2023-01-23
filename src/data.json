@@ -1,0 +1,14 @@
+{
+  "blogs": [
+    {
+      "slug": "article-one",
+      "title": "Article One",
+      "content": "Article One Content"
+    },
+    {
+      "slug": "article-two",
+      "title": "Article Two",
+      "content": "Article Two Content"
+    }
+  ]
+}
